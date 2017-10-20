@@ -1,0 +1,21 @@
+<h2>Get to Chirping</h2>
+<form [formGroup]="chirpForm" novalidate>
+  <div>
+    <label class="input">Username:
+      <input class="form-control" formControlName="username">
+    </label>
+    </div>
+    <div>
+    <label class="input">Group:
+      <input class="form-control" formControlName="group">
+    </label>
+    </div>
+    <div>
+    <label class="input">Chirp:
+      <input class="form-control" formControlName="chirp">
+    </label>
+    </div>
+    <button>Submit</button>
+</form>
+<p>Form value: {{ chirpForm.value | json }}</p>
+<p>Form status: {{ chirpForm.status | json }}</p>

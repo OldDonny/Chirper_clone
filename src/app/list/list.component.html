@@ -1,0 +1,10 @@
+<h2>Recent Chirps</h2>
+<div class= 'list'>
+  <ul>
+    <li *ngFor="let user of users">
+      <span class="chirp">{{user.username}}</span>{{user.group}}
+      <p class="text">{{user.chirp}}</p>
+      <button>View Chirp</button>
+    </li>
+  </ul>
+</div>
