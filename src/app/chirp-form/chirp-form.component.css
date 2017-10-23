@@ -1,0 +1,23 @@
+
+.input-box{
+    float: right;
+    text-align: right;
+}
+
+.welcome{
+    text-align: center;
+}
+
+.chirp_box{
+    text-align: center;
+    position: relative;
+}
+
+img{
+    height: 1em;
+    width: 1em;
+}
+
+.chirp-text{
+    width: 36em;
+}
