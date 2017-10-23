@@ -1,7 +1,8 @@
 export interface User{
+    id: number;
     username: string;
+    posts?:number;
     group:string;
-    posts:number;
     chirp: string;
 }
 

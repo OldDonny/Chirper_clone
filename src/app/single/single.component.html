@@ -1,5 +1,15 @@
-<div class="single_user">
-  <h2><label>Username: </label> {{user.name}}</h2>
-  <h3><label>Group:</label>{{user.group}}</h3>
-  <p><label>Chirp:</label>{{user.chirp}}</p>
-</div>
+<ng-container *ngIf="!!user">
+ <mat-card class="back-card col-sm-9">
+   <mat-card class="user">
+   <mat-card-title>
+      <img src="/assets/hh.svg">
+      <h3>{{user.username}}</h3>
+   </mat-card-title>
+   <mat-card-content>
+      <h5>{{user.group}}</h5>
+      <h4>{{user.chirp}}</h4>
+   </mat-card-content>
+  </mat-card>
+ </mat-card>
+</ng-container>
+

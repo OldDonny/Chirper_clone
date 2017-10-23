@@ -5,12 +5,18 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { SingleComponent } from './single/single.component';
 import { ChirpFormComponent } from './chirp-form/chirp-form.component';
+import { SinglepageComponent } from './singlepage/singlepage.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { ListpageComponent } from './listpage/listpage.component';
+
 
 const routes: Routes =[
-    {path: '', redirectTo:'../chirp-form', pathMatch:'full'},
-    {path: 'chirp-form', component: ChirpFormComponent},
-    {path: 'list', component: ListComponent},
-    {path: 'single', component: SingleComponent},
+    {path: '', redirectTo:'/homepage', pathMatch:'full'},
+    {path: 'homepage', component: HomepageComponent},
+    {path: 'singlepage/:id', component: SinglepageComponent},
+    {path: 'listpage', component: ListpageComponent},
+    
+
 ];
 
 @NgModule({

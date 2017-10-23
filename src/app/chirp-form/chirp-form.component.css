@@ -11,6 +11,11 @@
 .chirp_box{
     text-align: center;
     position: relative;
+    background-color:#416B41;
+}
+
+mat-list-item{
+    display: inline;
 }
 
 img{
@@ -21,3 +26,12 @@ img{
 .chirp-text{
     width: 36em;
 }
+
+mat-fab{
+    color: green;
+}
+
+mat-card-title{
+    color: white;
+}
+

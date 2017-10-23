@@ -1,0 +1,13 @@
+.singleuser{
+    height: 5em;
+    margin-bottom:1em;
+    background-color: #5C4747
+}
+p{
+    font-size: 16px;
+    color: white;
+}
+
+.container{
+    margin-top: 4em;
+}

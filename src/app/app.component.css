@@ -1,0 +1,15 @@
+
+mat-toolbar{
+    background-color:#416B41;
+    margin:0 auto;
+}
+
+a{
+    margin-left:1em;
+    color: white;
+    float:right;
+  }
+  .input-box{
+    float: right;
+    text-align: right;
+  }

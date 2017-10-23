@@ -18,6 +18,10 @@ import {UserService} from './service/chirp.service'
 import {MatToolbarModule} from '@angular/material'
 
 import {AppRoutingModule} from './app-routing-module';
+import { SinglepageComponent } from './singlepage/singlepage.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { ListpageComponent } from './listpage/listpage.component';
+import { OnlineusersComponent } from './onlineusers/onlineusers.component';
 
 
 
@@ -26,7 +30,11 @@ import {AppRoutingModule} from './app-routing-module';
     AppComponent,
     ListComponent,
     SingleComponent,
-    ChirpFormComponent
+    ChirpFormComponent,
+    SinglepageComponent,
+    HomepageComponent,
+    ListpageComponent,
+    OnlineusersComponent
   ],
   imports: [
     BrowserModule,
