@@ -8,3 +8,36 @@ a{
   float: right;
   text-align: right;
 }
+
+
+
+.welcome{
+  text-align: center;
+}
+
+.chirp_box{
+  text-align: center;
+  position: relative;
+  background-color:#416B41;
+}
+
+mat-list-item{
+  display: inline;
+}
+
+img{
+  height: 1em;
+  width: 1em;
+}
+
+.chirp-text{
+  width: 36em;
+}
+
+mat-fab{
+  color: green;
+}
+
+mat-card-title{
+  color: white;
+}

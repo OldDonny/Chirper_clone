@@ -1,0 +1,17 @@
+body{
+    position: relative;
+    top:5em;
+    left:15em;
+    height:75em;
+    width: 100em;
+    background-image: url('/assets/bigtree.svg');
+    background-repeat: no-repeat;
+}
+
+mat-card{
+    opacity: .6
+}
+
+mat-card:hover{
+    opacity: 1
+}

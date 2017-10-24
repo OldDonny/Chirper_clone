@@ -35,3 +35,6 @@ mat-card-title{
     color: white;
 }
 
+mat-card{
+    position: relative;
+}

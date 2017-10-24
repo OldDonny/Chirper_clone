@@ -1,7 +1,7 @@
 
 
 <a *ngFor="let user of users" [routerLink]="['/singlepage', user.id]">
-   <mat-card    class="info_chirp align-content-center">
+   <mat-card    class="info_chirp">
        <h3>{{user.username}}</h3>{{user.group}}
       <p class="text">{{user.chirp}}</p>
     </mat-card>

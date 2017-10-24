@@ -22,6 +22,7 @@ import { SinglepageComponent } from './singlepage/singlepage.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ListpageComponent } from './listpage/listpage.component';
 import { OnlineusersComponent } from './onlineusers/onlineusers.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 
@@ -34,7 +35,8 @@ import { OnlineusersComponent } from './onlineusers/onlineusers.component';
     SinglepageComponent,
     HomepageComponent,
     ListpageComponent,
-    OnlineusersComponent
+    OnlineusersComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

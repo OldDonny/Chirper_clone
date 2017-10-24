@@ -1,5 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
 h2{
     text-align: center;
+    position: relative;
+    right:2em;
 }
 
 .info_chirp{
@@ -8,5 +14,6 @@ h2{
     background-color: #6C836C;
     margin: 0 auto;
     margin-bottom:1em; 
-    
+  
 }
+

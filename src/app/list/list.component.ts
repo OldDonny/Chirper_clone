@@ -14,6 +14,9 @@ export class ListComponent implements OnInit {
   users=USERS;
   constructor(
     private userService: UserService,) { }
+    
+
+
   getUsers():void{
     this.userService.getUsers().then(users=> this.users=users)
   }
