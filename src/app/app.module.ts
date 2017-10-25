@@ -4,7 +4,7 @@ import {FormsModule} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material'
-import {MatInputModule} from '@angular/material'
+import {MatInputModule, MatRadioModule} from '@angular/material'
 import {MatFormFieldModule} from '@angular/material'
 import {MatCardModule} from '@angular/material'
 import {MatMenuModule} from '@angular/material';
@@ -23,6 +23,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ListpageComponent } from './listpage/listpage.component';
 import { OnlineusersComponent } from './onlineusers/onlineusers.component';
 import { SignupComponent } from './signup/signup.component';
+import { SigninformComponent } from './signinform/signinform.component';
 
 
 
@@ -36,9 +37,11 @@ import { SignupComponent } from './signup/signup.component';
     HomepageComponent,
     ListpageComponent,
     OnlineusersComponent,
-    SignupComponent
+    SignupComponent,
+    SigninformComponent
   ],
   imports: [
+    MatRadioModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,

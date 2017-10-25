@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ReactiveFormsModule,FormBuilder, FormGroup,Validators} from '@angular/forms'
 
 @Component({
   selector: 'app-signup',
@@ -6,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-
-  constructor() { }
-
+form: FormGroup
+signin: FormGroup
+  constructor(private fb: FormBuilder) { 
+    this.form = this.fb.group({
+      Username: ['', Validators.required ],
+      Password: ['',Validators.required],
+      Email: ['',Validators.email],
+      Over18:'yes'
+    });
+  }
+  
   ngOnInit() {
   }
 

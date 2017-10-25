@@ -1,17 +1,35 @@
-body{
-    position: relative;
-    top:5em;
-    left:15em;
-    height:75em;
-    width: 100em;
-    background-image: url('/assets/bigtree.svg');
-    background-repeat: no-repeat;
+
+.body{
+    width: auto;
+    height: 100%;
+    background-color: grey;
 }
 
+
 mat-card{
-    opacity: .6
+    position: fixed;
+
+    opacity: .6;
+    
+    
 }
 
 mat-card:hover{
-    opacity: 1
+    
+    opacity: 1;
+}
+
+.banner{
+    font-family: 'VT323', monospace;
+    position: relative;
+    left:3em;
+    font-size: 6em;
+}
+
+img{
+   
+    height: 30em;
+    position: relative;
+    left:38em;
+    top:8em;
 }
