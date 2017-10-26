@@ -1,43 +1,33 @@
 
 a{
-  margin-left:1em;
+
   color: white;
-  float:right;
 }
-.input-box{
-  float: right;
-  text-align: right;
+
+button{
+
 }
 
 
 
 .welcome{
   text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 3em;
+  background-color:rgba(255, 255, 255, 0.5)
 }
+
 
 .chirp_box{
   text-align: center;
   position: relative;
-  background-color:#416B41;
+  ;
 }
 
-mat-list-item{
-  display: inline;
-}
 
-img{
-  height: 1em;
-  width: 1em;
-}
 
-.chirp-text{
-  width: 36em;
-}
-
-mat-fab{
-  color: green;
-}
-
-mat-card-title{
-  color: white;
-}
+  .color{
+    height: 100vh;
+    overflow: hidden;
+    background-color:#A5D6A7 ;
+  }

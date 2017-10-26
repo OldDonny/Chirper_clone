@@ -10,5 +10,11 @@ import {MatMenuModule} from '@angular/material';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  info:string;
+  condition: false;
+
+  constructor(){
+    this.info= 'Welcome to Tree house. We are a full service chat application and we strive to bring you up to date information on people in your treehouse'
+  }
+  
 }

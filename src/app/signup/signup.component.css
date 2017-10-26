@@ -1,15 +1,17 @@
 
-.body{
-    width: auto;
-    height: 100%;
-    background-color: grey;
+body{
+    height: 100vh;
+    background-color: #81C784;
+    
 }
 
 
 mat-card{
     position: fixed;
-
+    z-index: 1;
     opacity: .6;
+    top: 5em;
+    right:0;
     
     
 }
@@ -20,16 +22,23 @@ mat-card:hover{
 }
 
 .banner{
-    font-family: 'VT323', monospace;
-    position: relative;
-    left:3em;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
     font-size: 6em;
+    margin-top:0;
 }
 
 img{
-   
+   padding-top:1em;
     height: 30em;
     position: relative;
-    left:38em;
-    top:8em;
+    margin-bottom:0;
+}
+
+.signup{
+    text-align: center;
+}
+
+.signin{
+    margin-top:3em;
 }

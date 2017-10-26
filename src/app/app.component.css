@@ -1,10 +1,13 @@
 
 mat-toolbar{
-    background-color:#416B41;
+    background-color:#4E342E;
     margin:0 auto;
+  
+    
 }
 
 a{
+  font-family: 'Josefin Slab', serif;
     margin-left:1em;
     color: white;
     float:right;
@@ -12,4 +15,12 @@ a{
   .input-box{
     float: right;
     text-align: right;
+  }
+
+  p{
+    font-family: 'Josefin Slab', serif;
+    background-color: #4E342E;
+    font-size: 2em;
+    margin: 0;
+    color: white;
   }

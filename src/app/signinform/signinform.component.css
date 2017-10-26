@@ -1,7 +1,7 @@
 mat-card{
-    bottom:2em;
-    position: fixed;
+   
     opacity: .6
+
 }
 
 mat-card:hover{

@@ -16,6 +16,7 @@ import { SingleComponent } from './single/single.component';
 import { ChirpFormComponent } from './chirp-form/chirp-form.component';
 import {UserService} from './service/chirp.service'
 import {MatToolbarModule} from '@angular/material'
+import {MatGridListModule} from '@angular/material';
 
 import {AppRoutingModule} from './app-routing-module';
 import { SinglepageComponent } from './singlepage/singlepage.component';
@@ -24,6 +25,8 @@ import { ListpageComponent } from './listpage/listpage.component';
 import { OnlineusersComponent } from './onlineusers/onlineusers.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninformComponent } from './signinform/signinform.component';
+import { InfoDirective } from './info.directive';
+
 
 
 
@@ -38,9 +41,12 @@ import { SigninformComponent } from './signinform/signinform.component';
     ListpageComponent,
     OnlineusersComponent,
     SignupComponent,
-    SigninformComponent
+    SigninformComponent,
+    InfoDirective
   ],
   imports: [
+   
+    MatGridListModule,
     MatRadioModule,
     BrowserModule,
     FormsModule,

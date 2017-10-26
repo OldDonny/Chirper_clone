@@ -14,18 +14,25 @@ import {UserService} from '../service/chirp.service'
 
 
 
+
 @Component({
   selector: 'chirp-form',
   templateUrl: './chirp-form.component.html',
   styleUrls: ['./chirp-form.component.css']
 })
 export class ChirpFormComponent {
-
+form: FormGroup
 
   constructor(
     private srv: UserService,
     private router: Router,
-  ) { }
+    private fb: FormBuilder,
+  ) { 
+    this.form= this.fb.group({
+      chirp:['', Validators.required]
+    })
+
+  }
 
   randomId():number{
     return Math.floor(Math.random()*1222);
