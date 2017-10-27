@@ -8,15 +8,20 @@ import {ReactiveFormsModule,FormBuilder, FormGroup,Validators} from '@angular/fo
 })
 export class SignupComponent implements OnInit {
 form: FormGroup
-signin: FormGroup
+signup: FormGroup
+condition:false
+signin:string
   constructor(private fb: FormBuilder) { 
+    this.signin='Sign In'
     this.form = this.fb.group({
       Username: ['', Validators.required ],
       Password: ['',Validators.required],
       Email: ['',Validators.email],
       Over18:'yes'
+  
     });
   }
+  
   
   ngOnInit() {
   }

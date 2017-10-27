@@ -26,6 +26,8 @@ import { OnlineusersComponent } from './onlineusers/onlineusers.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninformComponent } from './signinform/signinform.component';
 import { InfoDirective } from './info.directive';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { SigninDirective } from './signin.directive';
 
 
 
@@ -42,7 +44,9 @@ import { InfoDirective } from './info.directive';
     OnlineusersComponent,
     SignupComponent,
     SigninformComponent,
-    InfoDirective
+    InfoDirective,
+    ToolbarComponent,
+    SigninDirective
   ],
   imports: [
    

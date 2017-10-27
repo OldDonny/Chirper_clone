@@ -1,4 +1,9 @@
-import {User, Random} from './user'
+import {User, Random,} from './user'
+
+// export const signin: In[]=[
+    
+// ]
+
 
 export const USERS: User[] = [
     {id:1 , username:'Thomas23', posts:233,  group: 'losers',  chirp:'"People in this country dont take kindly to disrespecting the military" - Lara Trump'},

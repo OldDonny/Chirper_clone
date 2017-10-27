@@ -1,16 +1,16 @@
 
-  <mat-card>
-    <mat-card-title>Sign in</mat-card-title>
+ 
+    <p>Sign in</p>
     <form novalidate [formGroup]="signin">
       <mat-form-field>
-        <input matInput formControlName='Username' name='Username' placeholder='Username'>
+        <input #submit matInput formControlName='Username' name='Username' placeholder='Username'>
       </mat-form-field>
       <mat-form-field>
         <input matInput formControlName='Password' name='Password' placeholder='Password'>
       </mat-form-field>
      
       <mat-card-actions>
-        <button mat-button md-button>Go</button>
+        <button (click)= 'signIn(submit.value)' mat-button md-button>Go</button>
       </mat-card-actions>
     </form>
-  </mat-card> 
+

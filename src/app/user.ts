@@ -9,3 +9,8 @@ export interface User{
 export interface Random{
     username:string;
 }
+
+// export interface In{
+//     username:any;
+//     password:any;
+// }

@@ -1,22 +1,3 @@
 
-<mat-toolbar>
-    
-    <a [routerLink]='["/signup"]'> <img height="50" src="/assets/treehouselogo.png"></a>
-     <a routerLink="/homepage">Tree House</a>
-     <a routerLink="/listpage">Chirps</a>
-     <div>
-       
-       <a (click)='condition= !condition'>Learn more</a>
-    </div>
-       <div class="col-sm-12 input-box">
-       
-         <mat-form-field>
-             <input matInput>
-           </mat-form-field>
-           <button mat-button>Search</button>
-         </div>
-     </mat-toolbar>
-     <p *appInfo="condition" >{{this.info}}</p>
-
 <router-outlet></router-outlet>
 

@@ -31,7 +31,6 @@ form: FormGroup
     this.form= this.fb.group({
       chirp:['', Validators.required]
     })
-
   }
 
   randomId():number{
@@ -41,9 +40,12 @@ form: FormGroup
   pushChirp(chirp:string,){
     let id=this.randomId();
     let newChirp={id, username: 'Oledonny' ,group: "Moderator" ,chirp,}
-    USERS.unshift(newChirp)
-    this.router.navigate(['/listpage'])
-      
+    if(this.form.valid){
+      USERS.unshift(newChirp)
+      this.router.navigate(['/listpage'])
+    }
+   else{
+     return;
+   }   
   }
-
 }

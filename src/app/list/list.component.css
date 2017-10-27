@@ -2,13 +2,10 @@
     box-sizing: border-box;
 }
 
-h2{
-    text-align: center;
-    position: relative;
-    right:2em;
-}
+
 
 .info_chirp{
+    font-family: 'Josefin Slab', serif;
     color: white;
     width: 26em;
     background-color: #6C836C;
@@ -17,3 +14,7 @@ h2{
   
 }
 
+.info_chirp:hover{
+    padding: -2em;
+    border: 1px solid #4E342E ;
+}

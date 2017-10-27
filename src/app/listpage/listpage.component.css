@@ -3,8 +3,10 @@
     margin: 0 auto;
 }
 
-h2{
-    color: white;
+p{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 3em;
+    color:#4E342E;
     text-align: center;
     margin: 0 auto;
     padding-top:1em;

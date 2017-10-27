@@ -2,16 +2,21 @@
 body{
     height: 100vh;
     background-color: #81C784;
+    background-image: url(/assets/bigtree.svg);
+    background-size: 42rem;
+    background-position: top;
+    background-repeat: no-repeat;
     
 }
-
+mat-toolbar{
+    background-color: #81C784;
+}
 
 mat-card{
-    position: fixed;
+    position: relative;
     z-index: 1;
     opacity: .6;
-    top: 5em;
-    right:0;
+   
     
     
 }
@@ -25,20 +30,23 @@ mat-card:hover{
     text-align: center;
     font-family: 'Fredericka the Great', cursive;
     font-size: 6em;
-    margin-top:0;
+    padding-top:3em; 
+    padding-bottom: .5em;
+    margin: 0 auto;
 }
 
 img{
-   padding-top:1em;
-    height: 30em;
+    height: 25em;
     position: relative;
     margin-bottom:0;
 }
 
 .signup{
+    margin-top: 5em;
     text-align: center;
 }
 
 .signin{
-    margin-top:3em;
+   padding-bottom: 1em;
+   padding-left: 1em;
 }
