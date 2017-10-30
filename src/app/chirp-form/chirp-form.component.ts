@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder,FormControl, FormGroup, Validators }  from '@angular/forms';
-import {USERS, RANDOMU} from '../data'
 import {User} from '../user'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material'
@@ -33,16 +32,14 @@ form: FormGroup
     })
   }
 
-  randomId():number{
-    return Math.floor(Math.random()*1222);
-  }
 
   pushChirp(chirp:string,){
-    let id=this.randomId();
-    let newChirp={id, username: 'Oledonny' ,group: "Moderator" ,chirp,}
+    let newChirp={user: 'Oledonny' ,message: chirp}
     if(this.form.valid){
-      USERS.unshift(newChirp)
-      this.router.navigate(['/listpage'])
+      this.srv.create(newChirp)
+      .subscribe(Response=>{
+        this.router.navigate(['/listpage'])
+      })
     }
    else{
      return;

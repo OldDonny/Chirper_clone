@@ -2,9 +2,9 @@ import { Component, Input, OnInit } from '@angular/core';
 import {Location} from '@angular/common'
 import {UserService} from '../service/chirp.service'
 import {User} from '../user'
-import {USERS} from '../data'
 import {ActivatedRoute, ParamMap} from '@angular/router'
 import 'rxjs/add/operator/switchMap'
+import {Observable} from 'rxjs/Rx'
 
 @Component({
   selector: 'app-single',
@@ -12,7 +12,7 @@ import 'rxjs/add/operator/switchMap'
   styleUrls: ['./single.component.css']
 })
 export class SingleComponent implements OnInit {
-  @Input()user: User;
+  chirp: any
 
 
   constructor(
@@ -24,10 +24,19 @@ export class SingleComponent implements OnInit {
 
   ngOnInit():void {
     this.route.paramMap
-    .switchMap((params: ParamMap) => this.userService.getUser(+params.get('id')))
-    .subscribe((user) => {
-      this.user = user
-    });
+    .switchMap((params: ParamMap) =>{
+      return  Observable.from(this.userService.getUser(params.get('id')))
+      })
+      .subscribe(chirp => this.chirp = chirp)
   }
+  
+  delete(){
+    this.userService.delete(this.chirp.id)
+    .subscribe(() => {
 
+    })
+  }
 }
+
+
+

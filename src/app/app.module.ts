@@ -28,7 +28,7 @@ import { SigninformComponent } from './signinform/signinform.component';
 import { InfoDirective } from './info.directive';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SigninDirective } from './signin.directive';
-
+import {HttpModule} from '@angular/http'
 
 
 
@@ -49,7 +49,7 @@ import { SigninDirective } from './signin.directive';
     SigninDirective
   ],
   imports: [
-   
+    HttpModule,
     MatGridListModule,
     MatRadioModule,
     BrowserModule,

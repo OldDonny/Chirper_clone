@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder,FormControl, FormGroup, Validators }  from '@angular/forms';
-import {USERS, RANDOMU} from '../data'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material'
 import {MatInputModule} from '@angular/material'
@@ -15,8 +14,7 @@ import {MatChipsModule} from '@angular/material'
   styleUrls: ['./onlineusers.component.css']
 })
 export class OnlineusersComponent {
-  users= USERS;
-  randoms=RANDOMU;
+ 
 
   constructor() { }
 

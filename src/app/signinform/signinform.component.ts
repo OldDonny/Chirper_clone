@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import{FormBuilder, FormGroup, Validators} from '@angular/forms'
-// import{In} from '../user'
-// import{signin} from '../data'
 import{Router} from '@angular/router'
 
 @Component({
@@ -24,6 +22,8 @@ export class SigninformComponent{
     let user=this.signin
     if(this.signin.valid){
       this.router.navigate(['/homepage'])
+    }else{
+      return;
     }
 
   }
